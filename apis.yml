@@ -1,8 +1,27 @@
 aid: pentera
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pentera.png
 name: Pentera
-description: 'Pentera is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Pentera is an AI-driven automated security validation (exposure validation)
+  platform that lets organizations continuously test their security defenses through
+  automated penetration testing, red teaming, and adversarial validation across internal
+  networks, external attack surface, credentials, and cloud environments. The platform
+  safely emulates real attacker techniques at scale to surface exploitable exposures,
+  validate remediation, and prioritize risk. Pentera is enterprise/on-prem software
+  consumed via its own console and a broad set of product integrations (SIEM/SOAR,
+  ticketing, cloud, EDR, vulnerability management); it does not publish a public developer
+  API, OpenAPI specification, SDK, or developer portal. Pentera is backed by Insight
+  Partners. Sector: cybersecurity.'
 url: https://raw.githubusercontent.com/api-evangelist/pentera/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Cybersecurity
+- Security
+- Penetration Testing
+- Automated Security Validation
+- Exposure Management
+- Red Teaming
+- Vulnerability Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/pentera-trust-center.yml
+- type: Compliance
+  url: https://trust.pentera.io/
+- type: DomainSecurity
+  url: security/pentera-domain-security.yml
 - type: Website
   url: https://www.pentera.io/
+- type: Blog
+  url: https://www.pentera.io/blog/
+- type: Support
+  url: https://www.pentera.io/contact-us/
+- type: TermsOfService
+  url: https://pentera.io/legal-hub/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://pentera.io/legal-hub/privacy-policy/
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
